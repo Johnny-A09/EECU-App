@@ -14,6 +14,7 @@
     --nav:#eeeeee;
     --budget:#1a2f5a;
     --background:#ffffff;
+    --current-page: #6297D4;
   }
   body {
     background: var(--background); 
@@ -134,6 +135,7 @@ nav>div >a {
   .Continue {
     background-color: var(--next);
     color: white;
+    text-decoration: none;
     border: none;
     padding: 1.2rem 3rem;
     font-size: 1.3rem;
@@ -143,6 +145,14 @@ nav>div >a {
     transition: all 0.3s;
   }
 
+  .Continue:hover {
+    background-color: rgb(34, 75, 189);
+  }
+
+  .return{
+    text-decoration: none;
+    color: black;
+  }
 
 #career-selection {
     display: grid;
@@ -195,9 +205,12 @@ background-color: #6297D4;
   margin: 300px;
   margin-bottom:30px;
   margin-left: 400px;
+  border-radius: 20px;
+  height: 450px;
 }
 
 .red-text {
+  display:flex;
   color: #C90000;
   padding-left: 450px;
   margin-left: 0;
@@ -219,3 +232,19 @@ font-size: 32px;
   color: white;
   font-size: 24px;
 }
+
+#tax-calc {
+  background-color: var(--current-page);
+  border-radius: 20px;
+}
+
+.calc-header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.money-number {
+display: flex;
+justify-content: space-around;
+}
+
