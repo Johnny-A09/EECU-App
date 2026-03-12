@@ -10,6 +10,10 @@
     font-family: 'Inria Serif', serif;
   }
 
+  .mobileOnly {
+    display: none;
+  }
+
   :root{
     --primary:#b3cdeb;
     --selected:#6297d4;
@@ -155,7 +159,6 @@ nav>div >a {
     box-shadow: 0 0 0 3px rgba(0,123,255,0.1);
   }
 
-  
   .career:hover {
     transform: translateY(-5px);
     box-shadow: var(--selected);
@@ -442,4 +445,48 @@ background-color: var(--primary);
   display: flex;
   flex-direction: column;
 
+}
+
+
+
+/* Targets devices between 320px and 480px */
+@media (min-width: 380px) and (max-width: 440px) {
+  body {
+    background-color: #B3CDEB;
+  }
+  .nav-bar {
+    display: none;
+  }
+  .desk {
+    display: none;
+  }
+  .mobileOnly {
+    display: flex;
+    flex-direction: row;
+    margin-top:-30px;
+    font-size: 49px;
+    white-space: nowrap;
+  }
+  h2 {
+    font-size: 21px;
+    white-space:nowrap;
+  }
+  .budget-input {
+    background-color: #3182DF;
+    width: 378px;
+  }
+  #payment-1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  p {
+    font-size: 20px;
+  }
+  #tax-breakdown {
+background-color:#fff;
+  }
+  .continue {
+    font-size: clamp(0.8rem, 2vw, 2rem)
+  }
 }
